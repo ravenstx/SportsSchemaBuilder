@@ -1,0 +1,179 @@
+.scheme{
+   position: relative;
+    display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 50px;
+}
+
+.calendar-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.month-name{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.arrows{
+    display: flex;
+}
+
+.forward-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 80px;
+    color: transparent;
+    border: none;
+}
+
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 80px;
+    color: transparent;
+    border: none;
+}
+
+.calendar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.calendar-back{
+    opacity: 50%;
+}
+
+.calendar-table{
+    width: 90%;
+    table-layout: fixed;
+    border-spacing: 1px;
+    border-width: 1px;
+    border-collapse: collapse; 
+}
+
+.calendar-head{
+    text-align: center;
+}
+
+.calendar-table tr th{
+    border: 1px solid black;
+    background: #ccc;
+    /* background: rgb(98, 143, 214, 0.1); */
+    /* background: rgba(6, 6, 6, 0.8); */
+    background: rgba(255, 255, 255, 0.8);
+    
+    font-weight: 500;
+}
+.calendar-table tr td{
+    border: 1px solid;
+    height: 130px;
+}
+.calendar-table tr td:hover{
+    background-color: rgba(91, 125, 125, 0.1);
+}
+
+.not-current-month{
+    background-color: rgb(207, 211, 211, 0.6);
+}
+
+.day{
+    height: 100%;
+}
+
+.date-number{
+    /* top | right | bottom | left */
+    margin: 2px 0 4px 4px;
+}
+
+.activities-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 2px;
+    height: 70%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.activity{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    height: 25px;
+    padding-left: 5px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+}
+.activity svg{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+.activity p {
+    margin-top: auto;
+}
+
+.cyclingActivity {
+    background-color: #092b63;
+}
+
+.runningActivity {
+    background-color: #28a745;
+}
+
+.strengthActivity {
+    background-color: #5e0000;
+}
+
+.swimmingActivity {
+    background-color: #72e0ff;
+}
+
+.cyclingActivity:hover {
+    background-color: #0f46a0;
+}
+
+.runningActivity:hover {
+    background-color: #58b16d;
+}
+
+.strengthActivity:hover {
+    background-color: #b53131;
+}
+
+.swimmingActivity:hover {
+    background-color: #aae4f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+

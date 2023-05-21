@@ -1,0 +1,249 @@
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+
+
+.editing-box {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 450px;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    /* padding: 10px; */
+}
+
+
+
+
+.editing-box-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.top-title {
+   color: white !important;
+}
+
+.top-title svg{
+    margin-right: 5px;
+}
+
+
+.activity-info {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-group {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.strenght-exercises-container {
+    max-height: 210px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+
+.strenght-exercises {
+
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: #e3e3e3;
+    background-color: #eeeeee;
+    padding: 5px;
+
+}
+
+
+
+.input-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.input-container svg {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.input-container input {
+    border: 1px solid black;
+    border-radius: 2px;
+
+}
+
+.exercise-input {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: transparent !important;
+}
+
+.exercise-input input {
+    width: 95%;
+}
+
+.sets {
+    width: 20%;
+}
+
+.sets input {
+    width: 80%;
+    margin-right: 0px;
+    float: right;
+}
+
+.reps {
+    width: 20%;
+}
+
+.reps input {
+    width: 80%;
+    margin-right: 0px;
+
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    cursor: pointer;
+
+}
+
+.delete-button svg {
+    cursor: pointer;
+    float: right;
+}
+
+.add-button {
+    margin-top: 10px;
+    color: white;
+    min-height: 27px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10% !important;
+    border: 2px solid #28a745;
+    border: 2px solid #628fd6;
+    background-color: #28a745;
+    background-color: #628fd6;
+}
+
+.add-button:hover {
+    background-color: #3562ab;
+    border-color: #3562ab;
+}
+
+.duration-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.duration-container div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.duration-container h1{
+    opacity: 0.8;
+    font-size: 16px;
+    margin-bottom: -4px;
+}
+
+.duration-container p{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+.description-container{
+    margin-bottom: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.description-container div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.description-container h1{
+    opacity: 0.8;
+    font-size: 16px;
+    margin-bottom: -4px;
+}
+
+.description-container p{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: -4px;
+}
+
+
+.edit-delete-buttons {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+}
+
+.edit-delete-buttons button{
+    cursor: pointer;
+}
+
+.edit-delete-buttons .btn{
+    margin-left: 8px;
+}
+
+.rawbutton{
+    all: unset;
+    margin-left: 15px;
+}
+
+
+.exercises-table-container{
+    max-height: 200px;
+    height: fit-content;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin-bottom: 50px;
+}
+
+

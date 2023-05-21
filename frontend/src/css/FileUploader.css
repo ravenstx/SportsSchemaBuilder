@@ -1,0 +1,59 @@
+.file-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.custom-file-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed;
+    border-radius: 0.5rem;
+    border-color: #0060df;
+    border-color: #396ab8;
+    padding: 3rem;
+    height: 80%;
+    height: 205px;
+    width: 80%;
+}
+.custom-file-upload p{
+    font-size: 25px;
+    font-weight: 600;
+    /* text-decoration: underline; */
+    color: #0060df;
+    color: #396ab8;
+}
+
+
+
+.custom-file-upload:hover {
+    /* transform: scale(1.01); */
+    border-color: #003780;
+    
+    cursor: pointer;
+    /* transition: ease-in 0.1s; */
+}
+.custom-file-upload:hover p{
+    color: #003780;
+    
+}
+
+.custom-file-upload:hover .svg-inline--fa {
+    color: #003780;
+    
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+
+

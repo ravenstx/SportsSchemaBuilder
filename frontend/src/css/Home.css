@@ -1,0 +1,114 @@
+.dashboard{
+    /* height: 100vh; */
+    overflow: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+/* .dashboard::-webkit-scrollbar{
+    display: none;
+} */
+.dashboard-container{
+    margin-top: 1em;
+    /* display: flex; */
+    align-items: center;
+    /* background-color: rgb(198, 198, 198); */
+    /* height: calc(90% - 2em); */
+    height: 100%;
+    
+    
+}
+
+
+
+.accordion-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.dropdown{
+    display: flex;
+    /* justify-content: center;*/
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 8%;
+    height: 58px;
+    
+    cursor: pointer;
+    user-select: none;
+    /* border: 2px solid rgb(155, 151, 151); */
+    /* border: 2px solid #6ad1db; */
+    margin-top: 5px;
+    /* overflow: auto; */
+    flex-shrink: 0;
+    border-right: none;
+    border-left: none;
+}
+
+
+
+.trapezoid{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    /* border-right: 40px solid white;
+    border-top: 57px solid transparent; */
+    position: absolute;
+    left: -20px;
+    transform: skew(-30deg);
+    user-select: none;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+    z-index: -1;
+}
+
+.dropdown:hover .trapezoid {
+    width: 60%;
+}
+
+
+
+.trapezoid.selected {
+    width: 60%;
+}
+
+
+.dropdown p {
+    color: rgb(227, 227, 227);
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px;
+    position: absolute;
+    left: 0px;
+    margin: 0;
+}
+
+
+
+.dropdown svg {
+    position: absolute;
+    right: 25px;
+}
+
+.dropdown.selected {
+    border: 5px solid black;
+}
+
+
+
+
+
+
+
+/* .dropdown.bottom{
+    border-bottom: 2px solid rgb(17, 15, 15);
+} */
+
+/* .accordion-container :last-child {
+   border-bottom: 2px solid rgb(17, 15, 15);
+} */

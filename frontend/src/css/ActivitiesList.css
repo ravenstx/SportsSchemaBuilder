@@ -1,0 +1,14 @@
+.alert-container{
+    display: flex;
+    width: 100%;
+}
+
+.alert{
+    width: 90%;
+}
+
+.delete:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(95, 95, 95);
+}

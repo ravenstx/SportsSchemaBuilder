@@ -1,0 +1,146 @@
+.analysis {
+    /* background-color: rgb(218, 255, 204); */
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: fit-content;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.activities-and-upload{
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    
+}
+
+.activities{
+    padding-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+    overflow-y: scroll;
+    
+    height: 225px;
+    width: 65%;
+    /* scrollbar-color: rgb(95, 192, 231) rgb(138, 138, 138);
+        scrollbar-width: thin; */
+    scrollbar-width: none;
+    
+        /* Firefox */
+}
+
+.activities::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+.activities nav{
+    float: right;
+}
+
+.upload{
+    width: 35%;
+}
+
+
+
+
+
+.top-info{
+    padding-left: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 65%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+}
+
+.top-info div{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.top-info div p{
+    color: #636363;
+    opacity: 80%;
+    margin-bottom: 0;
+}
+
+.charts-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.charts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+.highcharts-figure,
+.highcharts-data-table table {
+    width: 100%;
+    margin: 1em auto;
+}
+
+/* .chart {
+    
+    height: 210px;
+} */
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+
+
+

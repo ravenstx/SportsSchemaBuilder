@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportsSchemaBuilder", "SportsSchemaBuilder\SportsSchemaBuilder.csproj", "{DC53815A-DCE5-4F1A-B470-0BB8C8D3DD06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsSchemaBuilder.Tests", "SportsSchemaBuilder.Tests\SportsSchemaBuilder.Tests.csproj", "{09BC3098-07DF-4A1F-967D-6FC40B261B02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsSchemaBuilder.test", "SportsSchemaBuilder.test\SportsSchemaBuilder.test.csproj", "{3D32E9D0-D92A-41CB-8EDA-736FCA0B0577}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DC53815A-DCE5-4F1A-B470-0BB8C8D3DD06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC53815A-DCE5-4F1A-B470-0BB8C8D3DD06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC53815A-DCE5-4F1A-B470-0BB8C8D3DD06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{09BC3098-07DF-4A1F-967D-6FC40B261B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09BC3098-07DF-4A1F-967D-6FC40B261B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09BC3098-07DF-4A1F-967D-6FC40B261B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09BC3098-07DF-4A1F-967D-6FC40B261B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D32E9D0-D92A-41CB-8EDA-736FCA0B0577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D32E9D0-D92A-41CB-8EDA-736FCA0B0577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D32E9D0-D92A-41CB-8EDA-736FCA0B0577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D32E9D0-D92A-41CB-8EDA-736FCA0B0577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

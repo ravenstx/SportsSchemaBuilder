@@ -10,13 +10,7 @@
   <img src="./images/analysispage2.png" width="49%" /> 
 </p>
 
-
-
-
 https://github.com/ravenstx/SportsSchemaBuilder/assets/103364044/887428d0-12d0-4132-83a7-f130341a5695
-
-
-
 
 # Scheme
 
@@ -31,13 +25,7 @@ https://github.com/ravenstx/SportsSchemaBuilder/assets/103364044/887428d0-12d0-4
   <img src="./images/strengthworkoutediting.png" width="49%" /> 
 </p>
 
-
-
-
 https://github.com/ravenstx/SportsSchemaBuilder/assets/103364044/1ab9dd1f-6629-44bf-8e90-f29d92db54e7
-
-
-
 
 # Introduction
 
@@ -54,6 +42,7 @@ Backend
 <li>MS SQL Server</li>
 <li>JSON Web Tokens</li>
 <li>Authentication & Authorization</li>
+<li>Unit Testing</li>
 </ul>
 
 Frontend

@@ -4,6 +4,7 @@ obj/
 
 # testing folders
 /TestResults
+/SportsSchemaBuilder.test
 
 
 /packages

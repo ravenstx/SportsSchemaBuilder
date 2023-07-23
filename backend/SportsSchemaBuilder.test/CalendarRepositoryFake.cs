@@ -1,19 +1,44 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SportsSchemaBuilder.Controllers;
 using SportsSchemaBuilder.Data;
-using SportsSchemaBuilder.Models;
 using SportsSchemaBuilder.Dto;
+using SportsSchemaBuilder.Models;
+using SportsSchemaBuilder.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using System.Diagnostics;
 
-namespace SportsSchemaBuilder.Services
+namespace SportsSchemaBuilder.test
 {
-    public class CalendarRepository : ICalendarRepository
+    public class CalendarRepositoryFake: ICalendarRepository
     {
         private readonly UserContext _context;
-        public CalendarRepository(UserContext context)
+        private readonly IAuthService _authService;
+
+
+        public CalendarRepositoryFake(IAuthService _authService)
         {
-            _context = context;
+            var options = new DbContextOptionsBuilder<UserContext>()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .Options;
+            var databaseContext = new UserContext(options);
+            databaseContext.Database.EnsureCreated();
+
+            for (int i = 1; i <= 1; i++)
+            {
+                databaseContext.Users.Add(new User()
+                {
+                    Id = i,
+                    Name = "test",
+                    HashedPassword = _authService.HashPassword("pass")
+
+                });
+                databaseContext.SaveChangesAsync();
+            }
+
+
+            _context = databaseContext;
         }
         public void AddWorkout(CalendarWorkout CalendarWorkout, int Id)
         {
@@ -121,7 +146,7 @@ namespace SportsSchemaBuilder.Services
         public UserCalendarWorkout GetActivity(int id, int dbUserId)
         {
             return _context.UserCalendar.Where(u => u.UserId == dbUserId && u.Id == id).Include(e => e.Exercises).FirstOrDefault();
-            
+
         }
 
         public void Remove(UserCalendarWorkout dbActivity)
@@ -144,6 +169,4 @@ namespace SportsSchemaBuilder.Services
             return _context.UserCalendar.Count();
         }
     }
-
-    
 }

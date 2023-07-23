@@ -12,6 +12,8 @@ namespace SportsSchemaBuilder.Services
 
         List<User> GetActivitiesList(string name, DateTime firstDate, DateTime lastDate);
 
+        int countActivities();
+
         UserCalendarWorkout GetActivity(int id, int dbUserId);
 
         void Remove(UserCalendarWorkout dbActivity);

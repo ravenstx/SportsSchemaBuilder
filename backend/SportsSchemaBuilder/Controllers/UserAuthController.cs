@@ -100,7 +100,7 @@ namespace SportsSchemaBuilder.Controllers
                         UserRefreshToken.TokenExpiration = DateTime.Now.AddMinutes(refreshTokenDuration);
                         UserRefreshToken.UserId = DbUser.Id;
 
-                        _UserRepository.AddRefreshToken(DbToken);
+                        _UserRepository.AddRefreshToken(UserRefreshToken);
                         await _UserRepository.SaveChangesAsync();
 
                     }
